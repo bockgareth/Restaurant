@@ -44,39 +44,39 @@ if (isset($_POST["submit"])) {
                                 </div>
                                 <div class="input-field col s12">
                                     <select id="burger" name="burger">
-                                        <option value="nothing" disabled selected>Choose your option</option>
+                                        <option value="/" disabled selected>Choose your option</option>
                                         <option value="beef">Beef R60</option>
                                         <option value="chicken">Chicken R50</option>
                                         <option value="vegan">Vegan R45</option>
-                                        <option value="nothing">Nothing</option>
+                                        <option value="/">Nothing</option>
                                     </select>
                                     <label>Burger</label>
                                 </div>
                                 <div class="input-field col s12">
                                     <select id="ribs" name="ribs">
-                                        <option value="nothing" disabled selected>Choose your option</option>
+                                        <option value="/" disabled selected>Choose your option</option>
                                         <option value="120g">120g R40</option>
                                         <option value="250g">250g R85</option>
-                                        <option value="nothing">Nothing</option>
+                                        <option value="/">Nothing</option>
                                     </select>
                                     <label>Ribs</label>
                                 </div>
                                 <div class="input-field col s12">
                                     <select id="fries" name="fries">
-                                        <option value="nothing" disabled selected>Choose your option</option>
+                                        <option value="/" disabled selected>Choose your option</option>
                                         <option value="small">Small R20</option>
                                         <option value="large">Large R30</option>
-                                        <option value="nothing">Nothing</option>
+                                        <option value="/">Nothing</option>
                                     </select>
                                     <label>Fries</label>
                                 </div>
                                 <div class="input-field col s12">
                                     <select id="drink" name="drink">
-                                        <option value="nothing" disabled selected>Choose your option</option>
+                                        <option value="/" disabled selected>Choose your option</option>
                                         <option value="coke">Coke R8</option>
                                         <option value="fanta">Fanta R8</option>
                                         <option value="sprite">Sprite R8</option>
-                                        <option value="nothing">Nothing</option>
+                                        <option value="/">Nothing</option>
                                     </select>
                                     <label>Drink</label>
                                 </div>
