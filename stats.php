@@ -8,15 +8,16 @@ $result = mysqli_query($conn, $sql);
 
 $rowCount = mysqli_num_rows($result);
 
-$sql = "SELECT * FROM customer_orders LIMIT 1";
-$time = mysqli_query($conn, $sql);
-
 $sum = 0;
 while ($row = mysqli_fetch_assoc($result))
 {
     $sum += $row["price"];
 }
-$avg = $sum / $rowCount;
+
+$sql = "SELECT CAST(SEC_TO_TIME(AVG(TIME_TO_SEC(time))) AS CHAR) FROM customer_orders";
+$result = mysqli_query($conn, $sql);
+
+$time = mysqli_fetch_assoc($result);
 
 ?>
 <div class="container">
@@ -37,13 +38,14 @@ $avg = $sum / $rowCount;
                         <span><h4>R<?php echo $sum ?></h4></span>
                     </div>
                     <div class="row">
-                        <h5>Average peak time in restaurant:</h5>
-                        <span><h4><?php echo new DateTime($time) ?></h4></span>
+                        <h5>Average peak time in restaurant:<h4><?php echo $time['CAST(SEC_TO_TIME(AVG(TIME_TO_SEC(time))) AS CHAR)'] ?></h4></h5>
+                        <span></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <?php include_once "inc/footer.php" ?>
 
