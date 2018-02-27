@@ -14,7 +14,7 @@ include_once "inc/header.php";
                     <table class="bordered">
                         <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>Table</th>
                             <th>Burger</th>
                             <th>Ribs</th>
                             <th>Fries</th>
